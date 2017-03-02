@@ -1,12 +1,12 @@
 resources:
   - name: shipdemo-img
     type: image
-    integration: manishas-dh    #replace with your Docker Hub integration name 
+    integration: docker_trusted_artifactory    #replace with your Docker Hub integration name 
     pointer:
-      sourceName: "manishas/node-build-push-docker-hub-deploy-kubernetes"  #replace with your image name on Docker Hub
+      sourceName: "ric-docker.jfrog.io/ricardo-ch/shippable-test"  #replace with your image name on Docker Hub
       isPull: false
     seed:
-      versionName: "master.1"  #replace with your image tag on Docker Hub
+      versionName: "master.9"  #replace with your image tag on Docker Hub
 
   - name: shipdemo-img-options
     type: dockerOptions
@@ -17,4 +17,4 @@ resources:
 #kubernetes cluster
   - name: kube-cluster
     type: cluster
-    integration: manishas-kube    #replace with your Kubernetes integration name
+    integration: "DEV - Ricardo"    #replace with your Kubernetes integration name
