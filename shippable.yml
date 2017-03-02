@@ -31,8 +31,8 @@ build:
     - popd
 
   post_ci:
-    - docker build -t $DOCKER_ACC/$DOCKER_REPO:$BRANCH.$BUILD_NUMBER .
-    - docker push $DOCKER_ACC/$DOCKER_REPO:$BRANCH.$BUILD_NUMBER
+    - docker build -t ric-docker.jfrog.io/ricardo-ch/shippable-test:$BRANCH.$BUILD_NUMBER .
+    - docker push ric-docker.jfrog.io/ricardo-ch/shippable-test:$BRANCH.$BUILD_NUMBER
 
 # Integrations are used to connect external resources to CI
 # http://docs.shippable.com/integrations/overview/
