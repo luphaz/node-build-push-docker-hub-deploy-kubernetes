@@ -51,4 +51,4 @@ integrations:
 # http://docs.shippable.com/integrations/imageRegistries/dockerHub/
   hub:
     - integrationName: "Docker - Artifactory"
-      type: "	JFrog Artifactory"
+      type: "jfrog artifactory"
